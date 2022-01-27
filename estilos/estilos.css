@@ -122,12 +122,20 @@ html{
 .textoInicio{
     grid-area: textoInicio;
     text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footerInicio{
     grid-area: footerInicio;
 }
 
+@media (max-width: 768px){
+.video { 
+        position: relative;
+        margin-top: 150px;
+}
+    }
 
  /*                                             LAYOUT SECCIÓN COMPRAR                                   */
 
