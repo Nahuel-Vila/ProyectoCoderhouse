@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
@@ -17,48 +20,85 @@
     <h1>Inmobiliaria Coderhouse</h1>
     <h2>¿Qué esperás para vivir en la casa de tus sueños?</h2>
 
-    <nav class="navContacto">
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="alquilar.html">Quiero alquilar</a>
-            </li>
-            <li>
-                <a href="comprar.html">Quiero comprar</a>
-            </li>
-            <li>
-                <a href="vender.html">Quiero vender</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="alquilar.html">Quiero alquilar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comprar.html">Quiero comprar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vender.html">Quiero vender</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
 </header>
 
-    <form class="formContacto">
-        <p  for="name">Ingrese su nombre</label>
-        <input type="text" name="name" /> </p>
-        <p><label for="email">Ingrese su email</label>
-        <input type="text" placeholder="xxx@gmail.com" name=email /><p>    
-
-    <label for="observaciones">Deja tu consulta: <textarea> </textarea>
-    </label>
-
-
-    <!-- Checkbox -->
-    <div>Acepto términos y condiciones  <input type="checkbox" name=Acepto /></div>
-    
-    <!-- Botones -->
-    <input type="submit" value="Enviar consulta" />
-    <input type="reset" value="Limpiar consulta" />
-    <input type="button" value="Non action" />
-
-</form>
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Inserte nombre" required> 
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Inserte apellido" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Inserte ciudad" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+      </select>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Código postal</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto términos y condiciones.
+        </label>
+        <div class="invalid-feedback">
+          Debe aceptar términos y condiciones para continuar.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
 
 <footer class="footerContacto">La casa que buscas, <strong> precio que necesitas.</strong></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

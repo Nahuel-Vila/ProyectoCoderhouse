@@ -6,8 +6,7 @@
 
 
 h1{
-    padding: 100px;
-    margin: 10px 10px 10px none;
+    padding: 50px;
     background-color: burlywood;
     text-align: center;
     position: relative;
@@ -17,31 +16,12 @@ h1{
 
 
 h2{
-    padding: 50px;
-    margin: 0px 15px 10px 15px;
+    padding: 30px;
+    margin: 25px 25px 25px 25px;
     background-color: burlywood;
     text-align: center;
-    border: 5px dotted grey;
     }
     
-
-nav{
-        padding: 150;
-        margin: 50px 50px 50px 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-style: oblique;
-}
-
-nav:hover{
-    transform: scale(2);
-}
-
-nav{
-    transition: all 2s;
-}
 
 .video{
     position: fixed;
@@ -68,6 +48,13 @@ Li:hover{
 
 }
 
+.nav nav-tabs:hover{
+    background-color: pink;
+    padding: pink;
+
+}
+
+
 .texto{
     margin: 20px 20px 20px 3px;
     display: flex;
@@ -76,9 +63,8 @@ Li:hover{
 
 
 p{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+margin: 25px 25px 25px 25px;
+} 
 
 footer{
     padding: 80px;
@@ -93,255 +79,20 @@ body{
 }
 
 
-/*                                              LAYOUT INICIO                                             */
 
-html{
-    height: 100%;
-}
-
-.bodyInicio{
-    display: grid;
-    gap: 10px;
-    min-height: 100%;
-    grid-template-areas: 
-    "headerInicio"
-    "barraInicio"
-    "textoInicio"
-    "footerInicio";
-}
-
-.headerInicio
-{
-    grid-area: headerInicio;
-}
-
-.barraInicio{
-    grid-area: barraInicio;
-}
-
-.textoInicio{
-    grid-area: textoInicio;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.footerInicio{
-    grid-area: footerInicio;
-}
 
 @media (max-width: 768px){
 .video { 
         position: relative;
         margin-top: 150px;
-}
-    }
-
- /*                                             LAYOUT SECCIÓN COMPRAR                                   */
-
- .bodyComprar{
-    display: grid;
-    gap: 10px;
-    min-height: 100%;
-    grid-template-areas: 
-    "headerComprar"
-    "navComprar"
-    "imagenesComprar"
-    "footerComprar";
-}
-
-.headerComprar{
-    grid-area: headerComprar;
-}
-
-.navComprar{
-    grid-area: navComprar;
-}
-
-.imagenesComprar{
-    grid-area: imagenesComprar;
-}
-
-.footerComprar{
-    grid-area: footerComprar;
-}
-
-.imagenesComprar{
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-    "alberdi"
-    "acasuso"
-    "avellino"
-    "falcon"
-    "larrazabal";
-}
-
-.alberdi{
-    grid-area: alberdi;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.acasuso{
-    grid-area: acasuso; 
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.avellino{
-    grid-area: avellino;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.falcon{
-    grid-area: falcon;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.larrazabal{
-    grid-area: larrazabal;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 425px){
-    .imagenesComprar{
-        grid-template-columns: 1;
-        grid-template-areas:
-        "alberdi"
-        "acasuso"
-        "avellino"
-        "falcon"
-        "larrazabal";
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 768px){
-    .imagenesComprar{
-        grid-template-columns: 2 50%;
-        grid-template-rows: 2 50%;
-        grid-template-areas:
-        "alberdi acasuso"
-        "avellino falcon"
-        "larrazabal";
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
+}    }
 
 
-@media (min-width: 1024px){
-    .imagenesComprar{
-        grid-template-columns: 2 auto;
-        grid-template-areas:
-        "alberdi acasuso"
-        "avellino falcon"
-        "larrazabal";
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
 
 /*                                      LAYOUT SECCIÓN VENDER                                   */
 
-.bodyVender{
-    display: grid;
-    gap: 10px;
-    min-height: 100%;
-    grid-template-areas: 
-    "headerVender"
-    "navVender"
-    "textoVender"
-    "footerVender";
+.descripcionComprar1{
+    margin: 10px 10px 10px 10px;
 }
 
-.headerVender
-{
-    grid-area: headerVender;
-}
-
-.navVender{
-    grid-area: navVender;
-}
-
-.textoVender{
-    grid-area: textoVender;
-    margin-left: 15px;
-}
-
-.footerVender{
-    grid-area: footerVender;
-}
-
-/*                                      LAYOUT SECCIÓN CONTACTO                                   */
-
-.bodyContacto{
-    display: grid;
-    gap: 10px;
-    min-height: 100%;
-    grid-template-areas: 
-    "headerContacto"
-    "navContacto"
-    "formContacto"
-    "footerContacto";
-}
-
-.headerContacto
-{
-    grid-area: headerContacto;
-}
-
-.navContacto{
-    grid-area: navContacto;
-}
-
-.formContacto{
-    grid-area: formContacto;
-}
-
-.footerContacto{
-    grid-area: footerContacto;
-}
-
-/*                                      LAYOUT SECCIÓN ALQUILAR                                   */
-
-.bodyAlquilar{
-    display: grid;
-    gap: 10px;
-    min-height: 100%;
-    grid-template-areas: 
-    "headerAlquilar"
-    "navAlquilar"
-    "imagenAlquilar"
-    "textoAlquilar"
-    "footerAlquilar";
-}
-
-.headerAlquilar
-{
-    grid-area: headerAlquilar;
-}
-
-.navAlquilar{
-    grid-area: navAlquilar;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.imagenAlquilar{
-    grid-area: imagenAlquilar;
-}
-
-.textoAlquilar{
-    grid-area: textoAlquilar;
-}
-
-.footerAlquilar {
-    grid-area: footerAlquilar;
-}
