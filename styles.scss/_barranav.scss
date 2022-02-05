@@ -1,0 +1,19 @@
+li{
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    & hover{
+        background-color: pink;
+        nav-tabs:hover{
+            background-color: pink;
+            padding: pink;
+};
+}
+}
